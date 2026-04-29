@@ -15,6 +15,7 @@ import {
   TableRow,
   Typography,
 } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 import AdminLayout from './AdminLayout'
 import Boardcast from '../AdminPage/boardcast'
 
@@ -96,6 +97,7 @@ function MetricCard({ icon, label, value, delta, badge, color }) {
 }
 
 export default function Dashboard() {
+  const navigate = useNavigate()
   return (
     <AdminLayout>
       <Box>
@@ -150,6 +152,7 @@ export default function Dashboard() {
             </Box>
             <Button
               variant="contained"
+              onClick={() => navigate('/registration')}
               sx={{
                 bgcolor: '#1d4ed8',
                 color: '#fff',

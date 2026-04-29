@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 // import heroImg from './assets/hero.png'
 import LoginPage from './Components/Login Page/LoginPage'
 import Dashboard from './Components/Admin/Dashboard'
+import Registeration from './Components/RegisterationPage/Registeration'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<LoginPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/registration" element={<Registeration />} />
     </Routes>
   )
 }
