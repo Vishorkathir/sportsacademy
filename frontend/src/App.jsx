@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
 import LoginPage from './Components/Login Page/LoginPage'
-import Dashboard from './Components/AdminPage/AdminDashboard/Dashboard'
+import Dashboard from './Components/Admin/Dashboard'
 import './App.css'
 
 function App() {

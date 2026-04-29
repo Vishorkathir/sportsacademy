@@ -1,7 +1,7 @@
 import { Box, Button, Stack, Typography } from '@mui/material'
 
 const menuItems = [
-  { label: 'Student Activities', icon: '👥', active: true },
+  { label: 'Student Activities', icon: '👥' },
   { label: 'Match Information', icon: '🏏' },
   { label: 'Media Upload', icon: '📤' },
   { label: 'Shop Information', icon: '🛒' },
@@ -12,8 +12,8 @@ export default function Sidebar() {
   return (
     <Box
       sx={{
-        width: 260,
-        bgcolor: '#fff',
+        width: 280,
+        bgcolor: '#f8f9fb',
         borderRight: '1px solid #e8edf5',
         display: 'flex',
         flexDirection: 'column',
@@ -24,34 +24,34 @@ export default function Sidebar() {
       }}
     >
       {/* Logo */}
-      <Box sx={{ p: 2, borderBottom: '1px solid #eef2f7' }}>
+      <Box sx={{ p: 2.5, borderBottom: '1px solid #e8edf5' }}>
         <Stack direction="row" alignItems="center" gap={1}>
           <Box
             sx={{
-              width: 30,
-              height: 30,
+              width: 32,
+              height: 32,
               borderRadius: 1.5,
               bgcolor: '#0b5aa0',
               color: '#fff',
               display: 'grid',
               placeItems: 'center',
-              fontSize: 14,
+              fontSize: 16,
             }}
           >
             🏆
           </Box>
-          <Typography sx={{ fontSize: 13.5, fontWeight: 700, color: '#0f172a' }}>
-            Kings11SportsAcademy
+          <Typography sx={{ fontSize: 14, fontWeight: 700, color: '#0f172a' }}>
+            Kings11Sports<br/>Academy
           </Typography>
         </Stack>
       </Box>
 
       {/* Menu Section */}
       <Box sx={{ p: 2, flex: 1 }}>
-        <Typography sx={{ fontSize: 12, fontWeight: 700, color: '#64748b', mb: 0.8 }}>
+        <Typography sx={{ fontSize: 12, fontWeight: 700, color: '#64748b', mb: 1 }}>
           Adminer's
         </Typography>
-        <Typography sx={{ fontSize: 11.5, color: '#94a3b8', mb: 2 }}>
+        <Typography sx={{ fontSize: 11.5, color: '#94a3b8', mb: 2.2 }}>
           Excellence in Performance
         </Typography>
 
@@ -60,36 +60,22 @@ export default function Sidebar() {
             <Box
               key={item.label}
               sx={{
-                p: 1.3,
+                p: 1.5,
                 borderRadius: 2,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 1.1,
-                color: item.active ? '#1d4ed8' : '#64748b',
-                bgcolor: item.active ? '#eaf1ff' : 'transparent',
-                position: 'relative',
+                gap: 1.2,
+                color: '#64748b',
                 transition: 'all 0.2s',
-                '&::before': item.active
-                  ? {
-                      content: '""',
-                      position: 'absolute',
-                      left: 0,
-                      top: 8,
-                      bottom: 8,
-                      width: 3,
-                      borderRadius: 999,
-                      bgcolor: '#1d4ed8',
-                    }
-                  : {},
                 '&:hover': {
                   bgcolor: '#e8edf5',
                   color: '#0b5aa0',
                 },
               }}
             >
-              <Box sx={{ fontSize: 15 }}>{item.icon}</Box>
-              <Typography sx={{ fontSize: 12.5, fontWeight: item.active ? 700 : 500 }}>
+              <Box sx={{ fontSize: 16 }}>{item.icon}</Box>
+              <Typography sx={{ fontSize: 12.5, fontWeight: 500 }}>
                 {item.label}
               </Typography>
             </Box>
@@ -98,20 +84,20 @@ export default function Sidebar() {
       </Box>
 
       {/* Buttons */}
-      <Box sx={{ p: 2, borderTop: '1px solid #eef2f7' }}>
+      <Box sx={{ p: 2, borderTop: '1px solid #e8edf5' }}>
         <Button
           fullWidth
           variant="contained"
           sx={{
-            bgcolor: '#0b5aa0',
+            bgcolor: '#1d4ed8',
             color: '#fff',
             textTransform: 'none',
             fontSize: 12.5,
             fontWeight: 600,
-            py: 1,
+            py: 1.2,
             borderRadius: 2,
             mb: 1,
-            '&:hover': { bgcolor: '#0a4b86' },
+            '&:hover': { bgcolor: '#1e40af' },
           }}
         >
           Upgrade to Pro
