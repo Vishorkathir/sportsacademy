@@ -1,0 +1,72 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Environment and local overrides
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.local
+
+# Python backend artifacts
+**/__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+site/
+wheels/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# Frontend and JS tooling
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.parcel-cache/
+.vite/
+.vite-temp/
+coverage/
+dist-ssr/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Local workspace tooling
+.codex
